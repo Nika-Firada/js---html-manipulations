@@ -62,7 +62,7 @@ const users = [
   const userListMainDiv = document.querySelector("#user-list");
   function creatUserCards() {
       const userElements = users.map(user => {
-          return `<div class='parent-div'><div class='avatar-div'><img class="img-class" src="${user.avatar}"></div><div class='name-span-div'><span>${user.first_name}</span><span>${user.last_name}</span></div><div class='buttons-div'><button class="delete-button">delete</button><button class="info-button">info</button></div><div id="em-info" class="email-info">${user.email}</div></div>`;
+          return `<div class='parent-div'><div class='avatar-div'><img class="img-class" src="${user.avatar}"></div><div class='name-span-div'><span>${user.first_name}</span><span>${user.last_name}</span></div><div class='buttons-div'><button class="delete-button">delete</button><button class="info-button">info</button></div><div class="email-info">${user.email}</div></div>`;
       });
       userListMainDiv.innerHTML = userElements.join('');
       const deleteButton = document.querySelectorAll('.delete-button');
@@ -71,11 +71,11 @@ const users = [
               btn.parentNode.parentNode.remove();
           })
       })
-      const emailAdd = document.getElementById('em-info');
+      const emailAdd = document.querySelectorAll('.email-info');
       const infoButton = document.querySelectorAll('.info-button');
       infoButton.forEach(inf =>{
             inf.addEventListener('click', e =>{
-                emailAdd.style.display = 'flex';
+                e.target.parentNode.nextElementSibling.style.display = 'flex';
             })
       })
   }
