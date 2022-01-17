@@ -7,6 +7,7 @@
     margin-left: 15px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: white;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -18,11 +19,22 @@
     justify-content: space-between;
     margin-top: 20px;
 }
+.name-span-div span {
+    margin-right: 9px;
+}
 .buttons-div {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
 }
+.buttons-div button{
+    margin-right: 20px;
+}
 .img-class{
     border-radius: 5px;
+}
+.email-info{
+    margin-top: 15px;
+    display: none;
+    align-items: center;
 }
