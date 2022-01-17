@@ -1,0 +1,28 @@
+#user-list {
+    display: flex;
+    background-color: antiquewhite;
+    margin-top: 20px;
+}
+.parent-div{
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.name-span-div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.buttons-div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.img-class{
+    border-radius: 5px;
+}
